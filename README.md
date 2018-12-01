@@ -36,7 +36,7 @@ Example:
 
 ```
 $ docker run -it --rm philipssoftware/bats:0.4.0 cat REPO
-https://github.com/philips-software/bats/tree/036ab9406533105e358ac768a51c1285cf523742
+https://github.com/philips-software/bats/tree/36ea34634d022e26d87d3e6b3e0f0d2841327e00
 ```
 
 ### TAGS
@@ -60,7 +60,7 @@ You can use this to pin down a version of the container from an existing develop
 
 > Why do we have our own docker image definitions?
 
-We often need bats to test or scripts. There is no official docker image, so let's make a version for our build pipelines.
+We often need bats to test our scripts. There is no official docker image, so let's make a version for our build pipelines.
 
 ## Issues
 
