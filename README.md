@@ -25,7 +25,7 @@ docker run -it --rm philipssoftware/bats:0.4.0: bats --version
 
 ## Content
 
-The images obviously contain openjdk, but also two other files:
+The images obviously contain bats, but also two other files:
 - `REPO`
 - `TAGS`
 
