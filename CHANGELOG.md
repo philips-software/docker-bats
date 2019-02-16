@@ -7,6 +7,8 @@ and this project uses the version of main tool as main version number .
 ## [Unreleased]
 
 ### Added
+- [#1] - Use common builders
 - Add bats 
 
+[#1]: https://github.com/philips-software/bats/issues/1
 [Unreleased]: https://github.com/philips-software/bats
