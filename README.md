@@ -1,4 +1,4 @@
-[![Build Status](https://github.com/philips-software/bats/workflows/build/badge.svg)](https://github.com/philips-software/bats/actions/)
+[![Build Status](https://github.com/philips-software/docker-bats/workflows/build/badge.svg)](https://github.com/philips-software/docker-bats/actions/)
 [![Slack](https://philips-software-slackin.now.sh/badge.svg)](https://philips-software-slackin.now.sh)
 
 # Docker images
@@ -36,7 +36,7 @@ Example:
 
 ```
 $ docker run -it --rm philipssoftware/bats:0.4.0 cat REPO
-https://github.com/philips-software/bats/tree/36ea34634d022e26d87d3e6b3e0f0d2841327e00
+https://github.com/philips-software/docker-bats/tree/36ea34634d022e26d87d3e6b3e0f0d2841327e00
 ```
 
 ### TAGS
@@ -64,7 +64,7 @@ We often need bats to test our scripts. There is no official docker image, so le
 
 ## Issues
 
-- If you have an issue: report it on the [issue tracker](https://github.com/philips-software/bats/issues)
+- If you have an issue: report it on the [issue tracker](https://github.com/philips-software/docker-bats/issues)
 
 ## Author
 
