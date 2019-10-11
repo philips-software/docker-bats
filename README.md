@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.com/philips-software/bats.svg?branch=master)](https://travis-ci.com/philips-software/bats)
+[![Build Status](https://github.com/philips-software/bats/workflows/build/badge.svg)](https://github.com/philips-software/bats/actions/)
 [![Slack](https://philips-software-slackin.now.sh/badge.svg)](https://philips-software-slackin.now.sh)
 
 # Docker images

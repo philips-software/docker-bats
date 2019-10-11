@@ -1,0 +1,43 @@
+on: [push]
+
+name: Build
+
+jobs:
+  build_0-4-0:
+    name: Build 0.4.0 
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - uses: actions/checkout@master
+      with:
+        submodules: true
+
+    - name: Build Docker Images
+      run: |
+        ./ci/bin/docker_build_and_push.sh 0.4.0/alpine bats:0.4.0 bats:0.4.0-alpine bats:0.4.0-rc2
+      env:
+        DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+        DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}'
+        DOCKER_ORGANIZATION: ${{ secrets.DOCKER_ORGANIZATION }}
+        GITHUB_ORGANIZATION: ${{ secrets.GITHUB_ORGANIZATION }}
+  
+  build_1-1-0:
+    name: Build 1.1.0 
+    runs-on: ubuntu-latest
+
+    steps:
+
+    - uses: actions/checkout@master
+      with:
+        submodules: true
+
+    - name: Build Docker Images
+      run: |
+        ./ci/bin/docker_build_and_push.sh 1.1.0/debian bats bats:1.1.0 bats:1.1.0-debian
+      env:
+        DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+        DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}'
+        DOCKER_ORGANIZATION: ${{ secrets.DOCKER_ORGANIZATION }}
+        GITHUB_ORGANIZATION: ${{ secrets.GITHUB_ORGANIZATION }}
+
