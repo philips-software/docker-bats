@@ -7,7 +7,8 @@ and this project uses the version of main tool as main version number .
 ## [Unreleased]
 
 ### Added
-- [#4] - Use Github Actions for CI/CD 
+- [#4] - Use Github Actions for CI/CD
+- [#3] - Add CODEOWNERS
 - [#1] - Use common builders version 1.0.1
 - Add bats 
 
