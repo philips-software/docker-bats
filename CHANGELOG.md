@@ -7,6 +7,7 @@ and this project uses the version of main tool as main version number .
 ## [Unreleased]
 
 ### Added
+- [#3] - Add CODEOWNERS 
 - [#1] - Use common builders version 1.0.1
 - Add bats 
 
