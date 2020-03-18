@@ -11,10 +11,11 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Build Docker Images
-      uses: philips-software/docker-ci-scripts@v1.0.1
+      uses: philips-software/docker-ci-scripts@v2.0.1
       with:
-        dockerfile: 0.4.0/alpine
-        tags: 0.4.0/alpine bats:0.4.0 bats:0.4.0-alpine bats:0.4.0-rc2
+        dockerfile: 0/alpine
+        image-name: bats
+        tags: 0.4.0 0.4.0-alpine 0.4.0-rc2
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}'
@@ -29,10 +30,11 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Build Docker Images
-      uses: philips-software/docker-ci-scripts@v1.0.1
+      uses: philips-software/docker-ci-scripts@v2.0.1
       with:
-        dockerfile: 1.1.0/debian
-        tags: bats bats:1.1.0 bats:1.1.0-debian
+        dockerfile: 1/debian
+        image-name: bats
+        tags: latest 1.1.0 1.1.0-debian
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}'
