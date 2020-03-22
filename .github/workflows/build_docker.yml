@@ -36,6 +36,7 @@ jobs:
         dockerfile: 1/debian
         image-name: bats
         tags: latest 1.1.0 1.1.0-debian
+        push-branch: update-readme
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}'
