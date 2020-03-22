@@ -16,6 +16,7 @@ jobs:
         dockerfile: 0/alpine
         image-name: bats
         tags: 0.4.0 0.4.0-alpine 0.4.0-rc2
+        push-branch: update-readme
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}'
