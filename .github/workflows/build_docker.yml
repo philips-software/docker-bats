@@ -3,8 +3,8 @@ on: [push]
 name: build
 
 jobs:
-  build_0-4-0:
-    name: Build 0.4.0 
+  build_0:
+    name: Build 0 
     runs-on: ubuntu-latest
 
     steps:
@@ -23,8 +23,8 @@ jobs:
         DOCKER_ORGANIZATION: philipssoftware 
         GITHUB_ORGANIZATION: philips-software
   
-  build_1-1-0:
-    name: Build 1.1.0 
+  build_1:
+    name: Build 1 
     runs-on: ubuntu-latest
 
     steps:
