@@ -8,10 +8,10 @@ This repo will contain docker images
 Current versions available:
 ```
 .
-├── 0.4.0
+├── 0
 │   └── alpine
 │       └── Dockerfile
-├── 1.1.0
+├── 1
 │   └── debian
 │       └── Dockerfile
 ```
