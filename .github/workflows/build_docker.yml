@@ -6,16 +6,15 @@ jobs:
   build_0-4-0:
     name: Build 0.4.0 
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
 
     - name: Build Docker Images
-      uses: philips-software/docker-ci-scripts@v2.0.1
+      uses: philips-software/docker-ci-scripts@87c418a0f22a6b9407c18d92bd43f3f522598dde
       with:
         dockerfile: 0/alpine
         image-name: bats
-        tags: 0.4.0 0.4.0-alpine 0.4.0-rc2
+        tags: 0 0.4 0.4.0 0.4.0-rc2 0.4.0-alpine 
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}'
@@ -25,16 +24,14 @@ jobs:
   build_1-1-0:
     name: Build 1.1.0 
     runs-on: ubuntu-latest
-
     steps:
     - uses: actions/checkout@v2
-
     - name: Build Docker Images
-      uses: philips-software/docker-ci-scripts@v2.0.1
+      uses: philips-software/docker-ci-scripts@87c418a0f22a6b9407c18d92bd43f3f522598dde
       with:
         dockerfile: 1/debian
         image-name: bats
-        tags: latest 1.1.0 1.1.0-debian
+        tags: latest 1 1.1 1.1.0 1.1.0-debian 
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}'
