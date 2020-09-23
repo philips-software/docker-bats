@@ -15,7 +15,7 @@ jobs:
         dockerfile: 0/alpine
         image-name: bats
         tags: 0 0.4 0.4.0 0.4.0-rc2 0.4.0-alpine 
-        push-branches: master test-3.1.0 develop
+        push-branches: test-3.1.0 master develop
       env:
         DOCKER_USERNAME: ${{ secrets.DOCKER_USERNAME }}
         DOCKER_PASSWORD: '${{ secrets.DOCKER_PASSWORD }}'
