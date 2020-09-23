@@ -10,7 +10,7 @@ jobs:
     - uses: actions/checkout@v2
 
     - name: Build Docker Images
-      uses: philips-software/docker-ci-scripts@87c418a0f22a6b9407c18d92bd43f3f522598dde
+      uses: philips-software/docker-ci-scripts@48-first-value-of-push-branch
       with:
         dockerfile: 0/alpine
         image-name: bats
