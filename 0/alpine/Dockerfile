@@ -9,13 +9,7 @@ RUN apk update \
       ncurses \
  && rm -rf /var/cache/apk/*
 
-RUN addgroup -S philips && \
-  adduser -S -G philips philips
-
 RUN mkdir /app
-RUN chown philips:philips /app
-
-USER philips
 
 WORKDIR /app
 
